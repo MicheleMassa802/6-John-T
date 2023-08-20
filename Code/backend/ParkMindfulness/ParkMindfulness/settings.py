@@ -71,6 +71,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://main--parkmindfulness-user.netlify.app",
     "https://parkmindfulness-user.netlify.app",
     "https://parkmindfulness-manager.netlify.app",
+    
     # newest ones
     "https://6-john-t-user-fe.vercel.app",
     "https://6-john-t-manager-fe.vercel.app"
@@ -86,7 +87,11 @@ CORS_ORIGIN_WHITELIST = [
     "https://6-john-t.vercel.app",
     "https://main--parkmindfulness-user.netlify.app",
     "https://parkmindfulness-user.netlify.app",
-    "https://parkmindfulness-manager.netlify.app"
+    "https://parkmindfulness-manager.netlify.app",
+
+    # newest ones
+    "https://6-john-t-user-fe.vercel.app",
+    "https://6-john-t-manager-fe.vercel.app"
 ]
 
 ROOT_URLCONF = "ParkMindfulness.urls"
