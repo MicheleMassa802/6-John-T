@@ -26,8 +26,8 @@ from io import BytesIO
 
 ## Constants for QR
 QR_NAME = "Ontario Parks"
-QR_STAGING_DESC = "Scan code with phone camera for Park Mindfulness Experience\nOR visit https://6-john-t-one.vercel.app"
-QR_PROD_DESC = "Scan code with phone camera for Park Mindfulness Experience\nOR visit https://parkmindfulness-user.netlify.app"
+QR_STAGING_DESC = "Scan code with phone camera for Park Mindfulness Experience\nOR visit https://6-john-t-user-fe.vercel.app/"
+QR_PROD_DESC = "Scan code with phone camera for Park Mindfulness Experience\nOR visit https://6-john-t-user-fe.vercel.app/"
 TRY_ME = "TRY ME"
 
 ##################
@@ -103,11 +103,11 @@ class BenchCreateView_admin(CreateAPIView):
         # create the qr code that is to identify this bench object when users scan it
 
         # build the front end link template that we are to make the QR code for
-        # qr_link = f"https://6-john-t-one.vercel.app/#/media?m={bench.bench_id}&park_id={bench.park_id}"
-        if settings.DEBUG_N == True:
-            qr_link = f"https://6-john-t-one.vercel.app/#/media?m={bench.bench_id}"
-        else:
-            qr_link = f"https://parkmindfulness-user.netlify.app/#/media?m={bench.bench_id}"
+        qr_link = f"https://6-john-t-user-fe.vercel.app/#/media?m={bench.bench_id}"
+        # if settings.DEBUG_N == True:
+        #     qr_link = f"https://6-john-t-one.vercel.app/#/media?m={bench.bench_id}"
+        # else:
+        #     qr_link = f"https://parkmindfulness-user.netlify.app/#/media?m={bench.bench_id}"
 
         # use the qrcode library to make a qr code image through teh qr_class class
         qr_class = qrcode.QRCode(version=1, box_size=30, border=0)
