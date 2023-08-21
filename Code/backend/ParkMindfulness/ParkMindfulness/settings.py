@@ -67,7 +67,7 @@ MIDDLEWARE = [
 CSRF_TRUSTED_ORIGINS = [
     "https://6-john-t-user-fe.vercel.app",
     "https://6-john-t-manager-fe.vercel.app",
-    "https://6-john-t-production-9cc8.up.railway.app"
+    "https://6-john-t-production-e75d.up.railway.app"
 ]
 
 CORS_ORIGIN_ALLOW_ALL = False
@@ -77,7 +77,7 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = [
     "https://6-john-t-user-fe.vercel.app",
     "https://6-john-t-manager-fe.vercel.app",
-    "https://6-john-t-production-9cc8.up.railway.app"
+    "https://6-john-t-production-e75d.up.railway.app"
 ]
 
 ROOT_URLCONF = "ParkMindfulness.urls"
