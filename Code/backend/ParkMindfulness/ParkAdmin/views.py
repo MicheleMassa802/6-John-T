@@ -23,8 +23,8 @@ application managed by Ontario Parks.\n\nTo finish the setup of your account, pl
 go to {} and use the following temporary email and password to log in:\n\
 Username: {}\nPassword: {}\n\nOnce in, you can go onto your account and update your \
 password and create the park you manage.\n\n"
-STAGING_LOGIN = "https://6-john-t.vercel.app/login"
-PROD_LOGIN = "https://parkmindfulness-manager.netlify.app/login"
+STAGING_LOGIN = "https://6-john-t-manager-fe.vercel.app/login"
+PROD_LOGIN = "https://6-john-t-manager-fe.vercel.app/login"
 
 
 #########################
